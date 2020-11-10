@@ -1,0 +1,193 @@
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 200;
+  src: url('~assets/Roboto-Light.ttf') format('truetype');
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: transparent linear-gradient(205deg, #378BC940 0%, #BC6D4A40 100%) 0% 0% no-repeat padding-box;
+  font-family: 'Roboto';
+  margin: 0;
+  padding: 0;
+}
+
+body,
+#app {
+  height: 100%;
+}
+
+span,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  outline: none;
+}
+
+svg.icon {
+  height: 1em;
+  vertical-align: text-top;
+
+  use {
+    fill: currentColor;
+    stroke: currentColor;
+  }
+}
+
+.sr-only {
+  display: none;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+.card {
+  background: #FFFFFF;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 17px;
+  opacity: 1;
+}
+
+h2 {
+  font-size: 44px;
+  font-weight: 200;
+  text-align: center;
+}
+
+.card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  justify-content: center;
+  width: 800px;
+}
+
+button {
+  background-color: #4C9BDE;
+  border-width: 0;
+  border-radius: 100%;
+  cursor: pointer;
+  height: 134px;
+  width: 134px;
+
+  &:not(:last-child) {
+    margin-right: 25px;
+  }
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+}
+
+.buttons {
+  display: flex;
+}
+
+.rock svg {
+  width: 45%;
+}
+
+.paper svg {
+  width: 52%;
+}
+
+.scissors svg {
+  width: 44%;
+}
+
+.game{
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  margin: 0px auto;
+}
+
+.game-panel{
+  display: grid;
+  grid-template-columns: 25vw 10vw 25vw;
+  margin: 0px auto;
+}
+.game-header{
+  grid-row: 1;
+}
+.player-card{
+  grid-row: 2;
+  display: grid;
+  grid-template-rows: 4vw 8vw 1fr;
+  height: 25vw;
+  width: 25vw;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.text-center{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size:26px;
+  font-weight:bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.player1-row1{
+  grid-row: 1;
+}
+.sprite-gray{
+  grid-row: 2;
+  width: 8vw;
+  margin: auto;
+}
+
+.choice{
+  grid-row: 3;
+  transform: scale(.5, .5);
+}
+
+.white-path{
+  fill:white;
+}
+.green-path{
+  fill:#66b15f;
+}
+.red-path{
+  fill:#c14e4d;
+}
+.gray-path{
+  fill:#5e6972;
+}
+.blue-path{
+  fill: #4c9bde;
+}
+.ai-delay{
+  color:#4c9bde;;
+  font-size: 200px;
+  font-weight: bold;
+  margin: auto;
+}
+.result{
+  margin-top: calc(12.5vw + 25px);
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.score{
+  margin: auto;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}

@@ -1,0 +1,32 @@
+{
+  "name": "rock-paper-scissors",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "@types/webpack-env": "^1.15.3",
+    "babel-preset-es2015": "^6.24.1",
+    "css-loader": "^4.3.0",
+    "cyclejs-test-helpers": "^4.0.0",
+    "file-loader": "^6.1.1",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^7.3.1",
+    "snabbdom-looks-like": "^1.0.5",
+    "snabbdom-pragma": "^2.8.0",
+    "style-loader": "^2.0.0",
+    "svg-sprite-loader": "^5.0.0",
+    "ts-loader": "^8.0.4",
+    "typescript": "^3.9.7",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "scripts": {
+    "start": "webpack-dev-server"
+  },
+  "dependencies": {
+    "@cycle/dom": "^22.6.0",
+    "@cycle/run": "^5.2.0",
+    "cyclejs-utils": "^4.0.2",
+    "xstream": "^11.7.0"
+  }
+}
